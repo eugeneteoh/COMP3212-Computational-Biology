@@ -1,0 +1,285 @@
+/* ECS Dynamic CSS Style Sheet */
+/* Your browser identified as: GECKO */
+
+body {
+	margin: 2pt 8pt 2pt 8pt;
+}
+
+h1 {
+        font: bold xx-large Arial,helvetica,Sans-serif;
+        padding-top: 10pt;
+}
+
+h2 {
+        font: bold x-large Arial,Helvetica,Sans-serif;
+}
+
+h3 {
+        font: bold medium Arial,Helvetica,Sans-serif;
+}
+
+h4 {
+        font: medium Arial,Helvetica,Sans-serif;
+}
+
+/***********************************************/
+
+/* All Browsers */
+
+.ecsheader,.ecsfooter {
+	width: 100%;
+}
+.ecsfooter {
+	text-align: center;
+}
+.features {
+	padding: 8px;
+}
+
+.ecsheader, .ecsfooter {
+	spacing: 0;
+} 
+
+.features {
+}
+
+
+
+.copyright {
+	text-align: right;
+}
+.lastchange {
+	text-align: left;
+	font-size: small;
+}
+.address a {
+	text-decoration: none;
+}
+
+.logo {
+	padding: 4px;
+}
+.address
+{
+	text-align: right;
+	padding: 8px;
+        font: medium arial,helvetica,sans-serif;
+}
+
+
+/** CHANNELS *******************************************/
+
+/* New Browsers */
+.channeltitle { 
+	margin-top: 4pt;
+	padding: 2pt 4pt 2pt 0pt;
+        font-family: arial,helvetica,sans-serif;
+} 
+
+.channel {
+	padding: 8px;
+	margin: 5pt;
+}
+
+/*********************************************/
+
+dl.links dt {
+	font-weight: bold;
+	padding-top: 5px;
+}
+dl.links dd {
+}
+
+@media screen {  /* hide from IE3 */
+        A {
+                padding: 0pt;
+        }
+        A:hover {
+        }
+}
+
+div.hlinks {
+	font-family: arial,helvetica,sans-serif;
+}
+
+td.infokey {
+	width: 200px;
+	font-weight: bold;
+        font-family: arial,helvetica,sans-serif;
+	vertical-align: top;
+}
+td.infoval,td.infohead {
+        font-family: arial,helvetica,sans-serif;
+	vertical-align: top;
+}
+
+
+/* New Browsers */
+td.infoval,td.infohead {
+	padding: 8px;
+}
+td.infokey {
+	padding: 8px;
+	margin: 5pt;
+}
+
+
+
+body {
+	background-color: #fff;
+	color: #000;
+}
+
+a:link {
+	color: #821a23;
+}
+a:visited {
+	color: #8b551a;
+}
+
+h1,h2,h3,h4 {
+        color: #606060;
+}
+
+/***********************************************/
+
+.ecsheader, .ecsfooter {
+	background-color: #f0f0f0;
+	border-style: solid; 
+	border-width: 2px; 
+	border-color: #ddd #999 #999 #ddd;
+} 
+
+.features {
+	background-color: #f0f0f0;
+	color: #000;
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #999 #ddd #ddd #999;
+}
+
+
+/* All Browsers */
+
+.address a {
+	color: #000;
+}
+
+
+
+/** CHANNELS *******************************************/
+
+/* New Browsers */
+.channeltitle { 
+} 
+
+.channel {
+	background-color: #f0f0f0;
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #999 #ddd #ddd #999;
+}
+
+/*********************************************/
+
+dl.links dt {
+}
+dl.links dd {
+}
+
+@media screen {  /* hide from IE3 */
+        A {
+        }
+        A:hover {
+                background-color: #ffffc0;
+                color: #821a23;
+        }
+}
+
+div.hlinks {
+}
+
+td.infokey {
+	background-color: #f0f0f0;
+	color: #000;
+}
+td.infoval,td.infohead {
+	color: #000;
+}
+
+
+/* New Browsers */
+td.infoval,td.infohead {
+}
+td.infokey {
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #999 #ddd #ddd #999;
+}
+
+
+/*********************************************/
+/* Timetables 
+/*********************************************/
+
+td.tableoutline {
+	background-color: #fff;
+	border-style: none; 
+	border-width: 2px; 
+	border-color: #999 #ddd #ddd #999;
+}	
+td.tablewarning {
+	background-color: #ffff00;
+}
+td.tableerror {
+	background-color: #ff6060;
+}
+td.tabledull {
+	background-color: #c0c0c0;
+}
+
+td.tablelight {
+	background-color: #f0f0f0;
+}	
+/* New Browsers */
+td.tabledark,td.tablelight,th.tableheading,td.tabledull,td.tableerror,td.tablewarning {
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ddd #999 #999 #ddd;
+}
+td.tabledark {
+	background-color: #fff;
+}	
+th.tableheading {
+	background-color: #fff;
+}	
+
+
+/*
+.channel , .features , .infokey {
+        background: url(/icons/css/holly.gif);
+        background-repeat: no-repeat;
+        background-position: top right;
+}
+*/
+
+
+/*********************************************/
+
+div.citations a {
+	text-decoration: none;
+}
+
+.field_fileinfo {
+	white-space: nowrap;
+}
+
+.thumbnail {
+	float: left;
+	margin: 0px 1em 1em 0em;
+}
+.illustration {
+	float: right;
+	clear: right;
+	margin: 0px 0em 1em 1em;
+}

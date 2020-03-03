@@ -1,0 +1,118 @@
+
+<!-- saved from url=(0065)https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab2.shtml -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>COMP3212 Tutorial</title>
+  <style> /* set the CSS */
+
+body { font: 16px Arial;}
+
+.line { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="./comp3212_tutorial2_files/ecs.css"></head>
+
+
+
+<body bgcolor="#F0F0F0" link="#c2202C" vlink="#821A23">
+  <span class="item">
+    <b><a href="https://secure.ecs.soton.ac.uk/">ECS</a>
+    | <a href="https://secure.ecs.soton.ac.uk/ug">Student Resources</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes">Courses</a>
+    | <a href="https://secure.ecs.soton.ac.uk/module/1920/COMP3212/32948/">Homepage</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212">Notes</a>
+    </b><br>
+    <a href="https://secure.ecs.soton.ac.uk/module/1920/COMP3212/32948/syllabus">Syllabus</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/books">Books</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/lectures">Notes</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/problems">Problems</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/software">Software</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/resources">Resources</a>
+    <br>
+    <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab1.shtml">Tutorial 1</a> |
+    <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab2.shtml">Tutorial 2</a> |
+    <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab3.shtml">Tutorial 3</a> |
+    <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab4.shtml">Tutorial 4</a>
+  </span>
+<br clear="ALL"><hr noshade="">
+
+
+<h1 align="center">Tutorial 2: Week 3-5</h1>
+
+<ul>
+  <li>This will be marked in the lab session in week 5 by me</li>
+</ul>
+<ol>
+  <li>Write a program to implement Needleman-Wunsch for proteins
+    <ul>
+      <li>You will need the <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/blosum50.txt">blosum50</a>
+	scoring matrix
+      </li><li> You can use any programming language
+      </li><li> Run this on HEAGAWGHEE versus PAWHEAE
+      </li><li> Compare this to page 23
+	in <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/lectures/apb-lectures/sequenceMatching.pdf">lecture
+	  5</a>
+      </li><li> Match the protein sequence
+	SALPQPTTPVSSFTSGSMLGRTDTALTNTYSAL with PSPTMEAVTSVEASTASHPHSTSSYFATTYYHLY
+    </li></ul>
+  </li><li> Modify your program to implement the Smith-Waterman
+      algorithm
+    <ul>
+      <li> Again run this on HEAGAWGHEE versus PAWHEAE
+      </li><li> Compare this to page 5
+	in <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/lectures/apb-lectures/localMatching.pdf">lecture 6</a>
+      </li><li> Find the best local match between
+	MQNSHSGVNQLGGVFVNGRPLPDSTRQKIVELAHSGARPCDISRILQVSNGCVSKILGRY
+	and
+	TDDECHSGVNQLGGVFVGGRPLPDSTRQKIVELAHSGARPCDISRI
+    </li></ul>
+  </li><li> We are going to test the BLAST algorithm
+    <ul>
+      <li> Download the Pax6 protein for the mouse by going
+	to <a href="http://www.uniprot.org/uniprot/P63015">http://www.uniprot.org/uniprot/P63015</a>
+	choose the "Format" tab and choose the FASTA (canonical) format
+      </li><li> Do the sacme for the eyeless protein for the fruit
+	fly <a href="http://www.uniprot.org/uniprot/O96791">http://www.uniprot.org/uniprot/O96791</a>
+      </li><li> Perform a BLAST sequence comparison using the web
+	service at <a href="https://blast.ncbi.nlm.nih.gov/">https://blast.ncbi.nlm.nih.gov</a>
+    </li></ul>
+  </li><li> Program the following HMM to generate CG rich regions
+    <p style="text-align:center;">
+      <img src="./comp3212_tutorial2_files/hmmCG.png" alt="HMM" width="600">
+      </p>
+  </li><li> Write a viterbi algorithm for finding the most likely CG
+    regions and find a way of drawing this
+  </li><li> Run this on the genome for
+    the  <a href="https://www.ncbi.nlm.nih.gov/nuccore/215104?report=fasta">phase
+      lambda</a> or <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/phaseLambda.fasta">here</a>
+</li></ol>
+  
+ 
+  <br clear="ALL"><hr noshade="">
+<span class="monolink"> <b>Intranet:</b> </span>
+<span class="item">
+     <a href="http://www.ecs.soton.ac.uk/ug/">Student Resources</a>
+    | <a href="http://www.ecs.soton.ac.uk/support/">Systems &amp; Support</a>
+</span>
+<br clear="ALL"><hr noshade="">
+<span class="monolink">
+<b>©2017 <a class="monolink" href="http://www.ecs.soton.ac.uk/">ECS</a>, <a class="monolink" href="http://www.soton.ac.uk/">University of Southampton</a></b>
+</span>
+
+
+
+
+</body></html>

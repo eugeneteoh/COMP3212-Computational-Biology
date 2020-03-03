@@ -1,0 +1,180 @@
+
+<!-- saved from url=(0065)https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab1.shtml -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>COMP3212 Tutorial</title>
+  <style> /* set the CSS */
+
+body { font: 16px Arial;}
+
+.line { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="./comp3212_tutorial1_files/ecs.css"></head>
+
+
+
+<body bgcolor="#F0F0F0" link="#c2202C" vlink="#821A23">
+  <span class="item">
+    <b><a href="https://secure.ecs.soton.ac.uk/">ECS</a>
+    | <a href="https://secure.ecs.soton.ac.uk/ug">Student Resources</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes">Courses</a>
+    | <a href="https://secure.ecs.soton.ac.uk/module/1920/COMP3212/32948/">Homepage</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212">Notes</a>
+    </b><br>
+    <a href="https://secure.ecs.soton.ac.uk/module/1920/COMP3212/32948/syllabus">Syllabus</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/books">Books</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/lectures">Notes</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/problems">Problems</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/software">Software</a>
+    | <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/resources">Resources</a>
+    <br>
+    <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab1.shtml">Tutorial 1</a> |
+    <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab2.shtml">Tutorial 2</a> |
+    <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab3.shtml">Tutorial 3</a> |
+    <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab4.shtml">Tutorial 4</a>
+  </span>
+<br clear="ALL"><hr noshade="">
+
+
+<h1 align="center">Tutorial 1</h1>
+
+<h2>Week 1</h2>
+
+<h3>Short Videos</h3>
+
+<p>Here are three short videos to give you more understanding of biology</p>
+
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=URUJD5NEXC8">Cell
+      structure</a></li>
+  <li><a href="https://www.youtube.com/watch?v=gG7uCskUOrA">From DNA
+      to Protein</a></li>
+  <li><a href="https://www.youtube.com/watch?v=FzcTgrxMzZk">Inner
+      life of cell</a></li>
+</ul>
+
+
+<h3>Exploring Biological Data</h3>
+
+<p>This week we are going to reinforce concepts learnt during lectures
+  about the cell structure, and the central dogma of molecular biology
+  regarding the process of information flow from DNA to protein.</p> 
+
+<p>Here we introduce concentration measurements of mRNA (taken by
+  microarray) and protein (taken by LC-MS) of 500 genes taken at
+  different timesteps within the cell
+  cycle <a href="https://en.wikipedia.org/wiki/Cell_cycle">wikipedia</a>
+  within this
+  dataset <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/Cell-Cycle-Set.xlsx">Cell-Cycle-Set.xlsx</a>,
+  alongside some terms that indicate biological process (GOBP),
+  molecular function (GOMF) and where they are located in the
+  cell/component (GOCC). As computational biologists, we are very
+  interested in modelling the concentration of protein in particular, as
+  proteins influence the majority of cell behaviour. It is thought that
+  the concentration of any particular protein can be reliably inferred
+  from it's respective mRNA level, we will be exploring that concept in
+  this tutorial.</p>
+
+<p>During these tutorials we highly recommend you use Python as the
+  primary programming language, and all of the examples will use Python;
+  however you may choose to use MATLAB/Java. </p>
+
+<h3>Tasks:</h3>
+<ol>
+  <li> Import the cell cycle dataset excel spreadsheet (using
+  Pandas). You may need to do some tidying of the data such as dropping
+    rows with missing NaN values.</li>
+  <li> Perform exploratory analysis of the data, thus:
+    <ol>
+      <li>Generate a histogram of one of the cell cycle stages of the
+      RNA and protein distribution. Do you notice anything interesting
+      with regards to the mean/variance of the distribution?</li> 
+      <li>Look at the pairwise correlations between each of the
+      RNA/protein columns (this can be achieved using the corr()
+      function). Does the change in timestep have much effect on the
+	relationship(s) between RNA and protein?</li>
+      <li>Generate a scatterplot of the RNA versus. protein for each
+      cell cycle stage. Fit a linear model to the data, can we infer
+      protein concentration from RNA concentration?<l i=""> 
+    </l></li></ol>
+</li></ol>
+
+<h2>Week 2</h2>
+
+<h3>Short Videos</h3>
+
+One of the major revolutions in science in the last 10-20 years has been
+in sequences.  Here are some videos describing the major sequencing technologies.
+<ul>
+  <li><a href="https://www.youtube.com/watch?v=vK-HlMaitnE">Sanger
+      sequencing</a></li>
+  <li><a href="https://www.youtube.com/watch?annotation_id=annotation_228575861&amp;feature=iv&amp;src_vid=womKfikWlxM&amp;v=fCd6B5HRaZ8">Illumina
+      sequencing</a></li>
+  <li><a href="https://www.youtube.com/watch?v=3UHw22hBpAk">Nanopore
+      Technology</a></li>
+  <li><a href="https://www.genomicsengland.co.uk/the-100000-genomes-project/">The
+      100,000 Genomes Project</a></li> 
+  <li><a href="https://www.youtube.com/watch?v=ZD2T0ue6rU8&amp;t=880s">This
+      is rather longer, but gives a picture of what is happening now in
+      the space of sequencing</a></li>
+</ul>
+
+<p>Continuing with the cell cycle, let's go into some deeper analysis of
+  the functional role of the proteins and see if there are comparisons
+  between RNA and protein.</p>
+
+<h3>Tasks</h3>
+<ol>
+  <li> Find all genes that contain 'cell cycle' in their GOBP term and
+    plot them as a scatterplot (with different colour) overlaid across all
+    genes for each cell cycle phase. Is there a stronger/weaker
+    correlation?
+  </li><li>  Repeat task 1 by finding genes that contain 'ribosome' in their
+    GOCC term.
+  </li><li> Count the number of occurrences of every GOBP term across all
+    genes, what are some of the difficulties that arise when using these
+    terms? 
+  </li><li> Calculate the change in mRNA/protein level across the cell cycle
+    by taking the difference at each stage (G1-S, S-G2, G2-G1), and
+    standardize the differences by mean-centering and variance
+    scaling. Repeat tasks 1 and 2 by plotting the changes in levels with
+    GOBP/GOCC labelling. What do we notice about changes in the cell
+    cycle? Is there any apparent clustering of GO terms?
+</li></ol>
+
+<p>We encourage you to use other terms in GOBP, GOMF or GOCC and try to
+  find clustering/correlations by using them.</p>
+
+<p>Here is a jupyter notebook with some
+  solutions <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/lab1sol.ipynb">jupyter</a> and raw
+  python <a href="https://secure.ecs.soton.ac.uk/notes/comp3212/tutorial/solutions.py">python</a></p>
+  
+  <br clear="ALL"><hr noshade="">
+<span class="monolink"> <b>Intranet:</b> </span>
+<span class="item">
+     <a href="http://www.ecs.soton.ac.uk/ug/">Student Resources</a>
+    | <a href="http://www.ecs.soton.ac.uk/support/">Systems &amp; Support</a>
+</span>
+<br clear="ALL"><hr noshade="">
+<span class="monolink">
+<b>©2017 <a class="monolink" href="http://www.ecs.soton.ac.uk/">ECS</a>, <a class="monolink" href="http://www.soton.ac.uk/">University of Southampton</a></b>
+</span>
+
+
+
+
+</body></html>
